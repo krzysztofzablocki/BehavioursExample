@@ -18,6 +18,6 @@
 @property(nonatomic, weak) IBOutlet UILabel *counterLabel;
 
 //! max count of characters allowed
-@property(nonatomic, assign) NSUInteger maxCount;
+@property(nonatomic, assign) IBInspectable NSUInteger maxCount;
 @property(nonatomic, assign) BOOL hideKeyboardOnReturn;
 @end
