@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4DC0AE87954C4CC992E69B29 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2982BA63414963B1BFE2E1 /* libPods.a */; };
+		6EECDA1E1A69174300FA29F7 /* KZCharacterLimitBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EECDA1A1A69174300FA29F7 /* KZCharacterLimitBehaviour.m */; };
+		6EECDA1F1A69174300FA29F7 /* KZBecomeFirstResponderBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EECDA1D1A69174300FA29F7 /* KZBecomeFirstResponderBehaviour.m */; };
+		6EECDA221A69194200FA29F7 /* MultiplexerProxyBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EECDA211A69194200FA29F7 /* MultiplexerProxyBehaviour.m */; };
 		CD3190E41935C60A00E0F37D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3190E31935C60A00E0F37D /* Foundation.framework */; };
 		CD3190E61935C60A00E0F37D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3190E51935C60A00E0F37D /* CoreGraphics.framework */; };
 		CD3190E81935C60A00E0F37D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3190E71935C60A00E0F37D /* UIKit.framework */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6EECDA191A69174300FA29F7 /* KZCharacterLimitBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZCharacterLimitBehaviour.h; sourceTree = "<group>"; };
+		6EECDA1A1A69174300FA29F7 /* KZCharacterLimitBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZCharacterLimitBehaviour.m; sourceTree = "<group>"; };
+		6EECDA1C1A69174300FA29F7 /* KZBecomeFirstResponderBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZBecomeFirstResponderBehaviour.h; sourceTree = "<group>"; };
+		6EECDA1D1A69174300FA29F7 /* KZBecomeFirstResponderBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZBecomeFirstResponderBehaviour.m; sourceTree = "<group>"; };
+		6EECDA201A69194200FA29F7 /* MultiplexerProxyBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplexerProxyBehaviour.h; sourceTree = "<group>"; };
+		6EECDA211A69194200FA29F7 /* MultiplexerProxyBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiplexerProxyBehaviour.m; sourceTree = "<group>"; };
 		91EA77AEBCCB46BD9C81C943 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		CD3190E01935C60A00E0F37D /* BehaviourExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BehaviourExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3190E31935C60A00E0F37D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +98,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EECDA181A69174300FA29F7 /* CharacterLimiter */ = {
+			isa = PBXGroup;
+			children = (
+				6EECDA191A69174300FA29F7 /* KZCharacterLimitBehaviour.h */,
+				6EECDA1A1A69174300FA29F7 /* KZCharacterLimitBehaviour.m */,
+			);
+			path = CharacterLimiter;
+			sourceTree = "<group>";
+		};
+		6EECDA1B1A69174300FA29F7 /* FirstResponder */ = {
+			isa = PBXGroup;
+			children = (
+				6EECDA1C1A69174300FA29F7 /* KZBecomeFirstResponderBehaviour.h */,
+				6EECDA1D1A69174300FA29F7 /* KZBecomeFirstResponderBehaviour.m */,
+			);
+			path = FirstResponder;
+			sourceTree = "<group>";
+		};
 		CD3190D71935C60A00E0F37D = {
 			isa = PBXGroup;
 			children = (
@@ -166,10 +193,14 @@
 		CD3191121935C63E00E0F37D /* Behaviours */ = {
 			isa = PBXGroup;
 			children = (
+				6EECDA181A69174300FA29F7 /* CharacterLimiter */,
+				6EECDA1B1A69174300FA29F7 /* FirstResponder */,
 				CD3191131935C63E00E0F37D /* ImagePicker */,
 				E291D8951921546228A65905 /* Animations */,
 				CD3191161935C63E00E0F37D /* KZBehaviour.h */,
 				CD3191171935C63E00E0F37D /* KZBehaviour.m */,
+				6EECDA201A69194200FA29F7 /* MultiplexerProxyBehaviour.h */,
+				6EECDA211A69194200FA29F7 /* MultiplexerProxyBehaviour.m */,
 			);
 			path = Behaviours;
 			sourceTree = "<group>";
@@ -331,10 +362,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EECDA221A69194200FA29F7 /* MultiplexerProxyBehaviour.m in Sources */,
 				CD3190F41935C60A00E0F37D /* AppDelegate.m in Sources */,
 				CD3191211935C63E00E0F37D /* KZImagePickerBehaviour.m in Sources */,
 				CD3191221935C63E00E0F37D /* KZBehaviour.m in Sources */,
 				CD3190F01935C60A00E0F37D /* main.m in Sources */,
+				6EECDA1E1A69174300FA29F7 /* KZCharacterLimitBehaviour.m in Sources */,
+				6EECDA1F1A69174300FA29F7 /* KZBecomeFirstResponderBehaviour.m in Sources */,
 				E291D2ACE478BA0F7DE3FA7D /* ParallaxAnimationBehaviour.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

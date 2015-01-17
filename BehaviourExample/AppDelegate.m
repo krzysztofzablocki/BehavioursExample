@@ -12,8 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  UIImageWriteToSavedPhotosAlbum([UIImage imageNamed:@"panorama"], nil, nil, nil);
-  
     return YES;
 }
 
