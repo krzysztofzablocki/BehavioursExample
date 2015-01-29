@@ -27,8 +27,14 @@
     if (base) {
         return base;
     }
-    
-    return [self.targets.firstObject respondsToSelector:aSelector];
+    BOOL responds = NO;
+    for (id obj in self.targets) {
+        if ([obj respondsToSelector:aSelector]) {
+            responds=YES;
+            break;
+        }
+    }
+    return responds;
 }
 
 
