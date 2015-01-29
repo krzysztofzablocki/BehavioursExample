@@ -18,4 +18,7 @@
 
 //! Scrollview we operate on
 @property (nonatomic, weak) IBOutlet UIScrollView* scrollView;
+
+//! Indicates whether background should go up as if it was placed on scrollview
+@property (nonatomic) IBInspectable BOOL scrollWithBackground;
 @end

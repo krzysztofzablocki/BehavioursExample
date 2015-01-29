@@ -323,6 +323,9 @@
                     </connections>
                 </customObject>
                 <customObject id="wGm-fq-Ipt" customClass="StretchyHeaderBehaviour">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundShouldFollowScrolling" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="backgroundView" destination="Emz-Jb-GEM" id="dHJ-Qs-qVA"/>
                         <outlet property="owner" destination="MsY-5I-pus" id="ayd-Mc-Z5V"/>

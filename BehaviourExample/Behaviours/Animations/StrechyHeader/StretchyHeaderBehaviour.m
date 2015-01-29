@@ -40,5 +40,12 @@
         [self.backgroundView setFrame:CGRectMake(0.0f - diff / 2.0f, CGRectGetMinY(scrollView.frame), CGRectGetWidth(self.targetView.frame)+ absoluteY, self.bgImageHeight + absoluteY)];
         [self.targetView setFrame:CGRectMake(0.0, CGRectGetMinY(scrollView.frame), CGRectGetWidth(self.targetView.frame), CGRectGetHeight(self.targetView.frame))];
     }
+    else
+    {
+        if(self.scrollWithBackground)
+        {
+           [self.backgroundView setFrame:CGRectMake(0, CGRectGetMinY(scrollView.frame)-absoluteY, CGRectGetWidth(self.targetView.frame), self.bgImageHeight)];
+        }
+    }
 }
 @end
