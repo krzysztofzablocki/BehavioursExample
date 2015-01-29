@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4DC0AE87954C4CC992E69B29 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2982BA63414963B1BFE2E1 /* libPods.a */; };
+		6EA699291A791CEE00DF277E /* BlurBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA699251A791CEE00DF277E /* BlurBehaviour.m */; };
+		6EA6992A1A791CEE00DF277E /* StretchyHeaderBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA699281A791CEE00DF277E /* StretchyHeaderBehaviour.m */; };
+		6EA6992D1A7A50C600DF277E /* StrechyHeaderExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA6992C1A7A50C600DF277E /* StrechyHeaderExampleViewController.m */; };
 		6EECDA1E1A69174300FA29F7 /* KZCharacterLimitBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EECDA1A1A69174300FA29F7 /* KZCharacterLimitBehaviour.m */; };
 		6EECDA1F1A69174300FA29F7 /* KZBecomeFirstResponderBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EECDA1D1A69174300FA29F7 /* KZBecomeFirstResponderBehaviour.m */; };
 		6EECDA221A69194200FA29F7 /* MultiplexerProxyBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EECDA211A69194200FA29F7 /* MultiplexerProxyBehaviour.m */; };
@@ -40,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6EA699241A791CEE00DF277E /* BlurBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurBehaviour.h; sourceTree = "<group>"; };
+		6EA699251A791CEE00DF277E /* BlurBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurBehaviour.m; sourceTree = "<group>"; };
+		6EA699271A791CEE00DF277E /* StretchyHeaderBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StretchyHeaderBehaviour.h; sourceTree = "<group>"; };
+		6EA699281A791CEE00DF277E /* StretchyHeaderBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StretchyHeaderBehaviour.m; sourceTree = "<group>"; };
+		6EA6992B1A7A50C600DF277E /* StrechyHeaderExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StrechyHeaderExampleViewController.h; path = "view controllers/StrechyHeaderExampleViewController.h"; sourceTree = "<group>"; };
+		6EA6992C1A7A50C600DF277E /* StrechyHeaderExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StrechyHeaderExampleViewController.m; path = "view controllers/StrechyHeaderExampleViewController.m"; sourceTree = "<group>"; };
 		6EECDA191A69174300FA29F7 /* KZCharacterLimitBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZCharacterLimitBehaviour.h; sourceTree = "<group>"; };
 		6EECDA1A1A69174300FA29F7 /* KZCharacterLimitBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZCharacterLimitBehaviour.m; sourceTree = "<group>"; };
 		6EECDA1C1A69174300FA29F7 /* KZBecomeFirstResponderBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZBecomeFirstResponderBehaviour.h; sourceTree = "<group>"; };
@@ -98,6 +107,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EA699231A791CEE00DF277E /* Blur */ = {
+			isa = PBXGroup;
+			children = (
+				6EA699241A791CEE00DF277E /* BlurBehaviour.h */,
+				6EA699251A791CEE00DF277E /* BlurBehaviour.m */,
+			);
+			path = Blur;
+			sourceTree = "<group>";
+		};
+		6EA699261A791CEE00DF277E /* StrechyHeader */ = {
+			isa = PBXGroup;
+			children = (
+				6EA699271A791CEE00DF277E /* StretchyHeaderBehaviour.h */,
+				6EA699281A791CEE00DF277E /* StretchyHeaderBehaviour.m */,
+			);
+			path = StrechyHeader;
+			sourceTree = "<group>";
+		};
+		6EA6992E1A7A50CC00DF277E /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6EA6992B1A7A50C600DF277E /* StrechyHeaderExampleViewController.h */,
+				6EA6992C1A7A50C600DF277E /* StrechyHeaderExampleViewController.m */,
+			);
+			name = "View controllers";
+			sourceTree = "<group>";
+		};
 		6EECDA181A69174300FA29F7 /* CharacterLimiter */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +193,7 @@
 				CD3190F51935C60A00E0F37D /* Images.xcassets */,
 				CD3190EA1935C60A00E0F37D /* Supporting Files */,
 				CD3191261935C7E000E0F37D /* Storyboard.storyboard */,
+				6EA6992E1A7A50CC00DF277E /* View controllers */,
 			);
 			path = BehaviourExample;
 			sourceTree = "<group>";
@@ -226,6 +263,8 @@
 		E291D8951921546228A65905 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				6EA699231A791CEE00DF277E /* Blur */,
+				6EA699261A791CEE00DF277E /* StrechyHeader */,
 				E291D00AAC1500DD29F82417 /* Parallax */,
 			);
 			path = Animations;
@@ -364,11 +403,14 @@
 			files = (
 				6EECDA221A69194200FA29F7 /* MultiplexerProxyBehaviour.m in Sources */,
 				CD3190F41935C60A00E0F37D /* AppDelegate.m in Sources */,
+				6EA699291A791CEE00DF277E /* BlurBehaviour.m in Sources */,
 				CD3191211935C63E00E0F37D /* KZImagePickerBehaviour.m in Sources */,
 				CD3191221935C63E00E0F37D /* KZBehaviour.m in Sources */,
 				CD3190F01935C60A00E0F37D /* main.m in Sources */,
+				6EA6992D1A7A50C600DF277E /* StrechyHeaderExampleViewController.m in Sources */,
 				6EECDA1E1A69174300FA29F7 /* KZCharacterLimitBehaviour.m in Sources */,
 				6EECDA1F1A69174300FA29F7 /* KZBecomeFirstResponderBehaviour.m in Sources */,
+				6EA6992A1A791CEE00DF277E /* StretchyHeaderBehaviour.m in Sources */,
 				E291D2ACE478BA0F7DE3FA7D /* ParallaxAnimationBehaviour.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

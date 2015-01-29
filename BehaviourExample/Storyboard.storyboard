@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C99d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="fLy-hV-eF5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="fLy-hV-eF5">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -86,6 +86,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="A1U-oe-fXF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hw-pU-pZL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="Cmv-S1-ERm" customClass="ParallaxAnimationBehaviour">
@@ -114,16 +115,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EMF-iL-gg6">
-                                <rect key="frame" x="96" y="161" width="128" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Parallax Behaviour">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Nvf-RW-9zp" kind="push" id="Zmy-AY-BtI"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="69N-lC-slg">
                                 <rect key="frame" x="79" y="262" width="163" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -142,6 +133,36 @@
                                 </state>
                                 <connections>
                                     <segue destination="2Jc-UJ-OBN" kind="push" id="CF2-yV-coF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rHC-N1-oCT">
+                                <rect key="frame" x="96" y="100" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Strechy header">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MsY-5I-pus" kind="push" id="fAK-Sh-M35"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H7X-l6-FIW">
+                                <rect key="frame" x="90" y="202" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Parallax Behaviour">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nvf-RW-9zp" kind="push" id="jbc-Rf-hvT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EMF-iL-gg6">
+                                <rect key="frame" x="63" y="147" width="182" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Blurred Parallax Behaviour">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UKO-iW-ORp" kind="push" id="q7h-Lu-Fn0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -220,6 +241,183 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="-362" y="720"/>
+        </scene>
+        <!--Strechy Header Example View Controller-->
+        <scene sceneID="gbt-hj-3OB">
+            <objects>
+                <viewController id="MsY-5I-pus" customClass="StrechyHeaderExampleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="naY-0w-CjN">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="panorama" id="Emz-Jb-GEM">
+                                <rect key="frame" x="0.0" y="64" width="320" height="226"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Gtp-5A-4Xa">
+                                <rect key="frame" x="0.0" y="64" width="320" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" alpha="0.64999997615814209" contentMode="scaleToFill" id="pV0-ob-KC5">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="226"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="panorama" id="nt1-KX-Vix">
+                                            <rect key="frame" x="84" y="34" width="152" height="141"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="ATY-iq-SpY">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="ATY-iq-SpY" id="pSM-l1-fFo">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MUX-20-0YA">
+                                                    <rect key="frame" x="35" y="14" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="MsY-5I-pus" id="fha-vi-VFr"/>
+                                    <outlet property="delegate" destination="h7N-9A-nVA" id="ay0-gu-ORq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XZz-ce-LDv"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DqI-tD-zNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="mBc-Ow-PQA" customClass="BlurBehaviour">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="point" keyPath="fullBlurOffset">
+                            <point key="value" x="0.0" y="120"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="blurRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="leadingScrollView" destination="Gtp-5A-4Xa" id="SbH-1E-aGI"/>
+                        <outlet property="owner" destination="MsY-5I-pus" id="IWd-AH-cPT"/>
+                        <outlet property="targetView" destination="Emz-Jb-GEM" id="O1u-nH-UIk"/>
+                    </connections>
+                </customObject>
+                <customObject id="h7N-9A-nVA" customClass="MultiplexerProxyBehaviour">
+                    <connections>
+                        <outlet property="owner" destination="MsY-5I-pus" id="Wki-nA-AUH"/>
+                        <outletCollection property="targets" destination="mBc-Ow-PQA" id="wf4-xU-Sn1"/>
+                        <outletCollection property="targets" destination="wGm-fq-Ipt" id="Y85-as-KOB"/>
+                        <outletCollection property="targets" destination="MsY-5I-pus" id="tV2-ib-cGp"/>
+                    </connections>
+                </customObject>
+                <customObject id="wGm-fq-Ipt" customClass="StretchyHeaderBehaviour">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="backgroundShouldFollowScrolling" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="backgroundView" destination="Emz-Jb-GEM" id="dHJ-Qs-qVA"/>
+                        <outlet property="owner" destination="MsY-5I-pus" id="ayd-Mc-Z5V"/>
+                        <outlet property="scrollView" destination="Gtp-5A-4Xa" id="veZ-N5-UWI"/>
+                        <outlet property="targetView" destination="pV0-ob-KC5" id="khI-eV-miB"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-57" y="-1236"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="h49-Bn-nJm">
+            <objects>
+                <viewController id="UKO-iW-ORp" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="Sff-rb-Cog">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="panorama" id="Bz6-nR-Y9B">
+                                <rect key="frame" x="0.0" y="184" width="800" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Zy6-J9-blQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view alpha="0.40000000596046448" contentMode="scaleToFill" id="n72-fh-03R">
+                                        <rect key="frame" x="100" y="234" width="1024" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.40630859139999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="1" green="0.40630859139999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="1324" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="1VF-ks-pCQ" id="QwK-xU-Ivv"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nmu-Ap-h3v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1t9-Ih-jru" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="1VF-ks-pCQ" customClass="MultiplexerProxyBehaviour">
+                    <connections>
+                        <outlet property="owner" destination="UKO-iW-ORp" id="Vr2-87-N9q"/>
+                        <outletCollection property="targets" destination="ud5-2G-xfj" id="0Cw-0L-N3c"/>
+                        <outletCollection property="targets" destination="XLA-fk-V1b" id="upA-OP-YFA"/>
+                    </connections>
+                </customObject>
+                <customObject id="ud5-2G-xfj" customClass="BlurBehaviour">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="point" keyPath="fullBlurOffset">
+                            <point key="value" x="320" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="blurRadius">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="leadingScrollView" destination="Zy6-J9-blQ" id="Wem-Ym-JAg"/>
+                        <outlet property="owner" destination="UKO-iW-ORp" id="lbV-oa-FII"/>
+                        <outlet property="targetView" destination="Bz6-nR-Y9B" id="JMf-vx-z0L"/>
+                    </connections>
+                </customObject>
+                <customObject id="XLA-fk-V1b" customClass="ParallaxAnimationBehaviour">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="point" keyPath="parallaxSpeed">
+                            <point key="value" x="-0.5" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="point" keyPath="parallaxOffset">
+                            <point key="value" x="0.0" y="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="leadingScrollView" destination="Zy6-J9-blQ" id="oLD-5k-hqD"/>
+                        <outlet property="owner" destination="UKO-iW-ORp" id="c4E-TN-IhG"/>
+                        <outlet property="targetView" destination="Bz6-nR-Y9B" id="257-rH-6Yf"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-64" y="-1854"/>
         </scene>
     </scenes>
     <resources>
