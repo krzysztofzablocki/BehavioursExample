@@ -8,11 +8,13 @@
 #import "MultiplexerProxyBehaviour.h"
 
 @implementation MultiplexerProxyBehaviour
+
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)sel
 {
     NSMethodSignature *sig = [super methodSignatureForSelector:sel];
     if (!sig) {
-        for (id obj in self.targets) {
+        for (NSValue *nonRetainedValue in _targets) {
+            id obj = [nonRetainedValue nonretainedObjectValue];
             if ((sig = [obj methodSignatureForSelector:sel])) {
                 break;
             }
@@ -28,7 +30,8 @@
         return base;
     }
     BOOL responds = NO;
-    for (id obj in self.targets) {
+    for (NSValue *nonRetainedValue in _targets) {
+        id obj = [nonRetainedValue nonretainedObjectValue];
         if ([obj respondsToSelector:aSelector]) {
             responds=YES;
             break;
@@ -40,10 +43,33 @@
 
 - (void)forwardInvocation:(NSInvocation *)anInvocation
 {
-    for (id obj in self.targets) {
+    for (NSValue *nonRetain in _targets) {
+        id obj = [nonRetain nonretainedObjectValue];
         if ([obj respondsToSelector:anInvocation.selector]) {
             [anInvocation invokeWithTarget:obj];
         }
     }
 }
+
+#pragma mark Properties
+
+- (NSArray *)targets
+{
+    NSMutableArray *mutableResult = [@[] mutableCopy];
+    for (NSValue *targetValue in _targets) {
+        [mutableResult addObject:[targetValue nonretainedObjectValue]];
+    }
+    return [mutableResult copy];
+}
+
+- (void)setTargets:(NSArray *)targets
+{
+    NSMutableArray *mutableResult = [@[] mutableCopy];
+    for (id target in targets) {
+        [mutableResult addObject:[NSValue valueWithNonretainedObject:target]];
+    }
+    _targets = [mutableResult copy];
+}
+
+@synthesize targets = _targets;
 @end
